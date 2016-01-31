@@ -10,9 +10,16 @@ var browserSync = require('browser-sync');
 var useref = require('gulp-useref');
 // glob imports
 var sassGlob = require('gulp-sass-glob');
-// minification
+// minification js
 var uglify = require('gulp-uglify');
-var gulpif = require('gulp-if');
+// minification css
+var cssnano = require('gulp-cssnano');
+// Optimize images
+var imagemin = require('gulp-imagemin');
+
+var gulpIf = require('gulp-if');
+
+
 
 // ========================================================
 
@@ -45,10 +52,18 @@ gulp.task('browserSync', function() {
 gulp.task('useref', function(){
   return gulp.src('site/*.html')
     .pipe(useref())
-    // Minifies only if it's a JavaScript file
-    .pipe(gulpIf('*.js', uglify()))
+    .pipe(gulpIf('js/*.js', uglify()))
+    // Minifies only if it's a CSS file
+    .pipe(gulpIf('css/*.css', cssnano()))
     .pipe(gulp.dest('dist'))
 });
+
+gulp.task('images', function(){
+  return gulp.src('site/img/**/*.+(png|jpg|gif|svg)')
+  .pipe(imagemin())
+  .pipe(gulp.dest('dist/img'))
+});
+
 
 
 gulp.task('default', ['browserSync' , 'styles'], function(){
