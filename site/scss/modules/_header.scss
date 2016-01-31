@@ -1,0 +1,60 @@
+.header{
+  margin-top: 5%;
+  margin-bottom: 20px;
+
+  &__logo{
+    display: inline-block;
+    width: 111px;
+    height: 35px;
+    background-image: url('../img/logo.png');
+  }
+
+  &__link{
+    float: right;
+    vertical-align: bottom;
+    margin-top: 15px;
+    padding-right: 35px;
+    font-size: 17px;
+    height: 28px;
+    background-image: url('../img/arrow.png');
+    background-repeat: no-repeat;
+    background-position: center right;
+    animation: out 0.5s;
+
+    &:hover{
+      animation: in 1s;
+      padding: 0px;
+      background-image: none;
+    }
+
+
+    @-webkit-keyframes in {
+      0%{
+        padding-right: 35px;
+
+      }
+      15%{
+        opacity: 0.1;
+      }
+      100%{
+        padding-right: 0px;
+        background-image: none;
+      }
+    }
+
+    @-webkit-keyframes out {
+      0%{
+        padding-right: 0px;
+        background-image: none;
+      }
+      15%{
+        opacity: 0.1;
+      }
+      100%{
+        padding-right: 35px;
+      }
+    }
+
+  }
+
+}

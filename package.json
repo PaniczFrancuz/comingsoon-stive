@@ -1,0 +1,17 @@
+{
+  "name": "Strive",
+  "version": "1.0.0",
+  "description": "Website",
+  "main": "site/index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Bartosz Pobocha",
+  "license": "ISC",
+  "devDependencies": {
+    "browser-sync": "^2.11.1",
+    "gulp": "^3.9.0",
+    "gulp-sass": "^2.1.1",
+    "gulp-sass-glob": "0.0.8"
+  }
+}

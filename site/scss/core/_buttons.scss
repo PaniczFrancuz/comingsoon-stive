@@ -1,0 +1,22 @@
+.button{
+
+  &--rounded{
+    background-color: $basic-color2;
+    color: $basic-color1;
+    padding: 15px 55px;
+    border-radius: 100px;
+    display: inline-block;
+    cursor: pointer;
+    box-shadow: 0px 0px 50px rgba($basic-color2, 0.55);
+    font-size: 15px;
+    font-weight: $bold;
+    transition: 0.2s;
+
+    &:hover{
+      background-color: $basic-color1;
+      color: $basic-color2;
+      box-shadow: 0px 0px 50px rgba($basic-color1, 0.55);
+    }
+  }
+
+}

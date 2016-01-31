@@ -1,0 +1,12 @@
+.link{
+  color: $text-color;
+  text-decoration: none;
+
+  &:hover{
+    color: lighten($text-color, 30%);
+  }
+
+  &--white{
+    color: $basic-color2;
+  }
+}

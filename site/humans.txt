@@ -1,0 +1,13 @@
+﻿# humanstxt.org/
+# The humans responsible & technology colophon
+
+# TEAM
+
+    Bartosz Pobocha -- UI Design & FrontEnd Development -- pobocha.pl
+
+# TECHNOLOGY COLOPHON
+
+    HTML5, CSS3, SASS
+    jQuery, Modernizr
+    Gulp, Browser Sync
+    BEM Methodology
