@@ -1,0 +1,15 @@
+.contact{
+  margin-top: 100px;
+  margin-bottom: 50px;
+
+  &__item{
+    text-align: center;
+
+    &__line1{
+      font-weight: $bold;
+    }
+    &__line2{
+
+    }
+  }
+}

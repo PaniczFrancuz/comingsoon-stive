@@ -5,6 +5,23 @@
 }
 
 
+.row{
+  white-space: nowrap;
+
+  &__col{
+    font-size: 0;
+    display: inline-block;
+    white-space: normal;
+
+    &__w4{
+      font-size: 13px;
+      width: 25%;
+    }
+  }
+
+}
+
+
 // =====================================================
 //    MEDIA QUERIES
 // =====================================================
